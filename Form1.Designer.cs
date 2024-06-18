@@ -28,12 +28,107 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.ImageAlign = ContentAlignment.TopCenter;
+            label1.Location = new Point(306, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(112, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Calculadora Maluca";
+            label1.TextAlign = ContentAlignment.TopCenter;
+            label1.Click += label1_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(274, 200);
+            button1.Name = "button1";
+            button1.Size = new Size(196, 34);
+            button1.TabIndex = 1;
+            button1.Text = "Somar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(255, 155);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(380, 155);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top;
+            label2.AutoSize = true;
+            label2.ImageAlign = ContentAlignment.TopCenter;
+            label2.Location = new Point(361, 158);
+            label2.Name = "label2";
+            label2.Size = new Size(15, 15);
+            label2.TabIndex = 0;
+            label2.Text = "+";
+            label2.TextAlign = ContentAlignment.TopCenter;
+            label2.Click += label1_Click;
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Top;
+            label3.AutoSize = true;
+            label3.BorderStyle = BorderStyle.FixedSingle;
+            label3.FlatStyle = FlatStyle.Flat;
+            label3.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ControlText;
+            label3.ImageAlign = ContentAlignment.TopCenter;
+            label3.Location = new Point(374, 300);
+            label3.Margin = new Padding(3, 1, 3, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(2, 88);
+            label3.TabIndex = 0;
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.Click += label1_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(727, 559);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Controls.Add(label2);
+            Controls.Add(label3);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Texto Exemplo";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label2;
+        private Label label3;
     }
 }
